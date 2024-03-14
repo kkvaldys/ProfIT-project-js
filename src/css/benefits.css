@@ -40,83 +40,138 @@ input {
   cursor: pointer;
 }
 
-/* Mobile */
+/* Mobile - гумова верстка*/
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+.benefits-container {
+  max-width: 344px;
+  height: 1271px;
+  margin: 0 auto;
+  background-color: #1c1d20;
+}
+
+.benefits-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+.benefits-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.benefits-card {
+  flex-basis: center;
+  background-color: #242527;
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 344px;
+  max-height: 270px;
+  margin-bottom: 16px;
+}
+.benefits-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #ed3b44;
+  margin-bottom: 64px;
+}
+
+.benefits-subtitle {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+.benefits-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.benefits-button {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  margin-top: 16px;
+  width: 187px;
+  height: 55px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background-color: #1c1d20;
+}
+
+/* Mobile - адаптивна верстка*/
+@media screen and (min-width: 375px) {
   .benefits-container {
-    width: 344px;
+    max-width: 344px;
     height: 1271px;
-    margin: 0 auto;
-    background-color: #1c1d20;
   }
+}
 
-  .benefits-title {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-    margin-bottom: 32px;
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .benefits-container {
+    /* max-width: 704px; */
+    height: 731px;
+    width: 100%;
   }
-
-  /* .benefits-wrap {
+  .benefits-wrapper {
     display: flex;
-     column;
-    
-  } */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
 
   .benefits-card {
-    background-color: #242527;
-    border-radius: 20px;
-    padding: 24px;
-    max-width: 344px;
-    max-height: 270px;
-    margin-bottom: 16px;
-  }
-  .benefits-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 48px;
-    height: 48px;
-    background-color: #ed3b44;
-    margin-bottom: 64px;
-  }
-  .benefits-icon-svg {
-  }
-
-  .benefits-subtitle {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: #fafafa;
-    margin-bottom: 8px;
-  }
-  .benefits-text {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
+    flex-basis: calc((100% - 16px) / 2);
+    margin-bottom: 0;
   }
 
   .benefits-button {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    margin-top: 16px;
-    width: 187px;
-    height: 55px;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #fafafa;
-    background-color: #1c1d20;
+    margin-top: 48px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .benefits-container {
+    /* max-width: px;
+    height: 731px; */
+  }
+  .benefits-wrapper {
+    gap: 16px;
+    margin: 0 auto;
+  }
+
+  .benefits-card {
+    margin-bottom: 0;
+    display: block;
+    flex-basis: calc((100% - 32px) / 2);
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .benefits-button {
+    margin-top: 48px;
   }
 }
