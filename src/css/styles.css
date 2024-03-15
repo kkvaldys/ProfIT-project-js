@@ -15,10 +15,6 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
@@ -34,6 +30,11 @@
   --btn-hover: #e0373f;
   --text-color: #fafafa;
   --footer-clr: #3cbc81;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--text-color);
 }
 
 body {
