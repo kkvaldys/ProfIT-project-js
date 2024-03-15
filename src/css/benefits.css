@@ -155,8 +155,8 @@ input {
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .benefits-container {
-    /* max-width: px;
-    height: 731px; */
+    max-width: px;
+    height: 731px;
   }
   .benefits-wrapper {
     gap: 16px;
