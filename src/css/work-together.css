@@ -70,6 +70,10 @@
     transition: background-color ease-in-out 200ms;
 }
 
+.input-wrapper.active::after {
+    background-color: #FAFAFA80;
+}
+
 .input-wrapper.invalid::after{
     content: "Invalid email,try again";
     color: #E74A3B;
@@ -86,10 +90,6 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     line-height: 1.28em;
-}
-
-.input-wrapper.active::after{
-    background-color: #FAFAFA80;
 }
 
 .footer-form-button{
