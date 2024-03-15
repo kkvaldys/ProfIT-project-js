@@ -32,7 +32,6 @@
   margin-bottom: 32px;
 }
 .benefits-card {
-  flex-basis: center;
   background-color: var(--card-clr);
   border-radius: 20px;
   padding: 24px;
@@ -106,11 +105,23 @@
     height: 731px;
   }
   .benefits-title-wrapper {
-    max-width: 680px;
+    width: 680px;
     height: 675px;
   }
-  .benefits-card-wrapper {
+
+  .benefits-wrapper-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
-    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .benefits-card {
+    background-color: var(--card-clr);
+    border-radius: 20px;
+    padding: 24px;
+    width: 344px;
+    height: 270px;
   }
 }
