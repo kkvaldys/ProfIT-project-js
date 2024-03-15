@@ -1,73 +1,71 @@
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  .benefits.section {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    background-color: var(--bg-color);
-  }
-  .benefits-container.container {
-    width: 344px;
-    height: 1271px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .benefits-title-wrapper {
-    margin-bottom: 32px;
-  }
-  .benefits-title {
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-  }
-  .benefits-card-wrapper {
-    /* margin-bottom: 32px; */
-  }
-  .benefits-wrapper-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 32px;
-  }
-  .benefits-card {
-    background-color: var(--card-clr);
-    border-radius: 20px;
-    padding: 24px;
-    width: 344px;
-    height: 270px;
-  }
-  .benefits-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 48px;
-    height: 48px;
-    background-color: var(--btn-color);
-    margin-bottom: 64px;
-  }
 
-  .benefits-subtitle {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--text-color);
-    margin-bottom: 8px;
-  }
-  .benefits-text {
-    color: rgba(250, 250, 250, 0.6);
-  }
-  .benefits-button {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    width: 187px;
-    height: 55px;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-  }
+.benefits.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--bg-color);
 }
+.benefits-container.container {
+  width: 344px;
+  height: 1271px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-title-wrapper {
+  margin-bottom: 32px;
+}
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.benefits-wrapper-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.benefits-card {
+  background-color: var(--card-clr);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 344px;
+  height: 270px;
+}
+.benefits-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--btn-color);
+  margin-bottom: 64px;
+}
+
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.benefits-text {
+  color: rgba(250, 250, 250, 0.6);
+}
+.benefits-button {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media only screen and (min-width: 375px) {
   .benefits-container.container {
@@ -97,14 +95,20 @@
 }
 
 /* Стилі для настільних пристроїв (1440px і більше) */
-@media only screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .benefits-container.container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: 1440px;
     height: 731px;
+    margin: 0;
   }
+  .benefits-box {
+    flex: 1;
+    height: inherit;
+  }
+
   .benefits-title-wrapper {
     width: 680px;
     height: 675px;
