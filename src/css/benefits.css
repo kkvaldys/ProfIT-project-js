@@ -1,4 +1,7 @@
 /* Base styles */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
@@ -23,6 +26,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
 img {
@@ -66,7 +71,9 @@ input {
   justify-content: center;
   gap: 16px;
 }
-
+.benefits-wrapper-list {
+  column-count: 2;
+}
 .benefits-card {
   flex-basis: center;
   background-color: #242527;
@@ -75,6 +82,7 @@ input {
   max-width: 344px;
   max-height: 270px;
   margin-bottom: 16px;
+  box-sizing: border-box;
 }
 .benefits-icon {
   display: flex;
