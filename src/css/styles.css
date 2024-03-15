@@ -36,6 +36,10 @@
   --footer-clr: #3cbc81;
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
