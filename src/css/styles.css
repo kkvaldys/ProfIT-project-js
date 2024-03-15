@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./about-me.css');
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   body {
