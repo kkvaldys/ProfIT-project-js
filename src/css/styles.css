@@ -58,6 +58,9 @@ body {
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media only screen and (min-width: 375px) {
+  section {
+    padding: 0 16px;
+  }
 }
 
 /* Стилі для планшетів (768px і більше) */
