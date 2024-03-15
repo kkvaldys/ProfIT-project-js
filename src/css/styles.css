@@ -6,28 +6,65 @@
 */
 @import url('./reset.css');
 @import url('./about-me.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./benefits.css');
+@import url('./projects.css');
+@import url('./FAQ.css');
+@import url('./covers.css');
+@import url('./reviews.css');
+@import url('./work-together.css');
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.02em;
+
+  --bg-color: #1c1d20;
+  --card-clr: #242527;
+  --span-clr: #3b3b3b;
+  --btn-color: #ed3b44;
+  --btn-hover: #e0373f;
+  --text-color: #fafafa;
+  --footer-clr: #3cbc81;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
   body {
     zoom: 0.85;
   }
-}
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
-  .container {
-    min-width: 320px;
-    max-width: 375px;
-    padding: 0 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+  section {
     padding: 0 16px;
   }
+}
+
+/* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
+@media only screen and (min-width: 375px) {
+}
+
+/* Стилі для планшетів (768px і більше) */
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 0 32px;
+  }
+}
+
+/* Стилі для настільних пристроїв (1440px і більше) */
+@media only screen and (min-width: 1440px) {
 }
 
 .visually-hidden {
