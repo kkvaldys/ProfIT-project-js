@@ -42,8 +42,8 @@ input {
 
 /* Mobile - гумова верстка*/
 
-.benefits-container {
-  max-width: 344px;
+.benefits-container.container {
+  width: 344px;
   height: 1271px;
   margin: 0 auto;
   background-color: #1c1d20;
@@ -59,7 +59,7 @@ input {
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-.benefits-wrapper {
+.benefits-card-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -121,20 +121,19 @@ input {
 
 /* Mobile - адаптивна верстка*/
 @media screen and (min-width: 375px) {
-  .benefits-container {
-    max-width: 344px;
+  .benefits-container.container {
+    width: 344px;
     height: 1271px;
   }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .benefits-container {
-    /* max-width: 704px; */
+  .benefits-container.container {
+    width: 704px;
     height: 731px;
-    width: 100%;
   }
-  .benefits-wrapper {
+  .benefits-card-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -154,11 +153,11 @@ input {
 
 /* Desktop */
 @media screen and (min-width: 1440px) {
-  .benefits-container {
-    max-width: px;
+  .benefits-container.container {
+    max-width: 1440px;
     height: 731px;
   }
-  .benefits-wrapper {
+  .benefits-card-wrapper {
     gap: 16px;
     margin: 0 auto;
   }
@@ -166,7 +165,7 @@ input {
   .benefits-card {
     margin-bottom: 0;
     display: block;
-    flex-basis: calc((100% - 32px) / 2);
+    flex-basis: calc((100% - 16px) / 2);
     margin: 0 auto;
     padding: 0;
   }
