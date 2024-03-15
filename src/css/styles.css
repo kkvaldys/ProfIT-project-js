@@ -49,10 +49,6 @@ body {
 
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  body {
-    zoom: 0.85;
-  }
-
   section {
     padding: 0 16px;
   }
