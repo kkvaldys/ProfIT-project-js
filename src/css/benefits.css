@@ -1,0 +1,137 @@
+/* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
+
+.benefits.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.benefits-container.container {
+  width: 344px;
+  height: 1271px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-title-wrapper {
+  margin-bottom: 32px;
+}
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.benefits-wrapper-list {
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+.benefits-card {
+  background-color: var(--card-clr);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 344px;
+  height: 270px;
+}
+.benefits-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  stroke: var(--text-color);
+  fill: var(--btn-color);
+  background-color: var(--btn-color);
+  margin-bottom: 64px;
+}
+
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+.benefits-text {
+  color: rgba(250, 250, 250, 0.6);
+}
+.benefits-link {
+  margin-bottom: 0;
+}
+.benefits-button {
+  border: 1px solid var(--text-color);
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.benefits-button:hover {
+  border-color: rgba(250, 250, 250, 0.2);
+  color: rgba(250, 250, 250, 0.2);
+  transition: background-color ease-in-out 200ms;
+}
+
+/* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
+@media screen and (min-width: 375px) {
+  .benefits-container.container {
+    width: 344px;
+    height: 1271px;
+  }
+}
+
+/* Стилі для планшетів (768px і більше) */
+@media screen and (min-width: 768px) {
+  .benefits-container.container {
+    width: 704px;
+    height: 731px;
+  }
+  .benefits-card-wrapper {
+    max-width: 680px;
+    height: 675px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    justify-content: left;
+    gap: 16px;
+  }
+
+  .benefits-card {
+    flex-basis: calc((100% - 16px) / 2);
+    margin-bottom: 0;
+  }
+}
+
+/* Стилі для настільних пристроїв (1440px і більше) */
+@media screen and (min-width: 1440px) {
+  .benefits-container.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1440px;
+    height: 731px;
+    margin: 0;
+  }
+  .benefits-box {
+    flex: 1;
+    height: inherit;
+  }
+
+  .benefits-title-wrapper {
+    max-width: 680px;
+    height: 675px;
+    margin-bottom: 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; */
+  }
+  .benefits-card-wrapper {
+    max-width: 680px;
+    height: 675px;
+  }
+}
