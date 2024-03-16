@@ -1,0 +1,40 @@
+.page-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+}
+
+.logo-text {
+  color: var(--text-color);
+}
+
+.header-menu {
+  color: var(--text-color);
+}
+
+.menu-btn {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: none;
+  border: none;
+  text-decoration: underline;
+}
+
+.order-btn {
+  display: flex;
+  min-width: 174px;
+  max-height: 56px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  box-shadow: none;
+  border: none;
+  border-radius: 60px;
+}
