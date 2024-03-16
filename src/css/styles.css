@@ -16,10 +16,6 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 
-* {
-  box-sizing: border-box;
-}
-
 :root {
   font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
@@ -31,10 +27,17 @@
   --bg-color: #1c1d20;
   --card-clr: #242527;
   --span-clr: #3b3b3b;
+  --covers-bg: #d9d9d90a;
   --btn-color: #ed3b44;
   --btn-hover: #e0373f;
   --text-color: #fafafa;
   --footer-clr: #3cbc81;
+  background-color: #1C1D20;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--text-color);
 }
 
 body {
@@ -48,10 +51,6 @@ body {
 
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  body {
-    zoom: 0.85;
-  }
-
   section {
     padding: 0 16px;
   }
@@ -59,6 +58,9 @@ body {
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media only screen and (min-width: 375px) {
+  section {
+    padding: 0 16px;
+  }
 }
 
 /* Стилі для планшетів (768px і більше) */
