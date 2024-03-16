@@ -3,7 +3,6 @@
 .benefits.section {
   padding-top: 48px;
   padding-bottom: 48px;
-  background-color: var(--bg-color);
 }
 .benefits-container.container {
   width: 344px;
@@ -29,7 +28,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 .benefits-card {
   background-color: var(--card-clr);
@@ -92,6 +91,8 @@
     height: 731px;
   }
   .benefits-card-wrapper {
+    max-width: 680px;
+    height: 675px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -115,37 +116,22 @@
     height: 731px;
     margin: 0;
   }
-  /* .benefits-box {
+  .benefits-box {
     flex: 1;
     height: inherit;
-  } */
+  }
 
   .benefits-title-wrapper {
-    width: 680px;
+    max-width: 680px;
     height: 675px;
     margin-bottom: 0;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
   }
   .benefits-card-wrapper {
-    width: 680px;
+    max-width: 680px;
     height: 675px;
-  }
-  /* .benefits-wrapper-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 32px;
-  } */
-  .benefits-card {
-    background-color: var(--card-clr);
-    border-radius: 20px;
-    padding: 24px;
-    width: 344px;
-    height: 270px;
   }
 }
