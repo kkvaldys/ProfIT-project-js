@@ -4,27 +4,31 @@
   padding: 32px 0;
 }
 .covers-container.container {
-  min-width: 320px;
+  width: 375px;
   height: 508px;
   margin: 0;
   background-color: var(--covers-bg);
-  background-image: url(/src/img/optima/covers_back.png);
+  background-image: url(../img/optima/covers_back.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .covers-content {
+  width: 375px;
+  height: 508px;
   position: relative;
 }
 .covers-wrapper {
+  width: 375px;
+  height: 508px;
   position: absolute;
-  right: -800px;
+  /* right: -800px;
   left: 0;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .covers-line {
-  width: 544px;
   height: 314px;
   display: flex;
   gap: 10px;
@@ -32,26 +36,28 @@
 }
 
 .covers-list {
-  flex-shrink: 0;
+  width: 544px;
+  height: 314px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 8);
   white-space: nowrap;
+  /* flex-shrink: 0;
+   width: calc(100% / 8);
+ 
   animation-name: coversLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
-@keyframes coversLine {
-  from {
-    transform: translateX(-20%);
-  }
-
-  to {
-    transform: translateX(-180%);
-  }
+.covers-item {
+  width: 282.29px;
+  height: 162.94px;
+}
+.covers-img {
+  width: 282.29px;
+  height: 162.94px;
 }
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
@@ -85,3 +91,12 @@
     background: rgba(217, 217, 217, 0.04);
   }
 }
+/* @keyframes coversLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+} */
