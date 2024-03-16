@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.content {
+/* .content {
   position: relative;
 }
 .marquee {
@@ -56,7 +56,7 @@
   to {
     transform: translateX(-180%);
   }
-}
+} */
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media screen and (min-width: 375px) {
