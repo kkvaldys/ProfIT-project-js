@@ -1,11 +1,10 @@
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
 
 .covers.section {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 .covers-container.container {
-  max-width: 320px;
+  min-width: 320px;
   height: 508px;
   margin: 0;
   background-color: var(--covers-bg);
@@ -13,42 +12,39 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* .content {
+
+.covers-content {
   position: relative;
 }
-.marquee {
+.covers-wrapper {
   position: absolute;
   right: -800px;
   left: 0;
   overflow: hidden;
-  font-family: 'Pridi', sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
 }
 
-.marquee__inner {
-  height: 100vh;
+.covers-line {
+  width: 544px;
+  height: 314px;
   display: flex;
+  gap: 10px;
   transform: rotate(16deg);
 }
 
-.marquee__line {
-  background-color: #ffdc00;
+.covers-list {
   flex-shrink: 0;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(100% / 8);
   white-space: nowrap;
-  animation-name: marqueeLine;
+  animation-name: coversLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-@keyframes marqueeLine {
+@keyframes coversLine {
   from {
     transform: translateX(-20%);
   }
@@ -56,7 +52,7 @@
   to {
     transform: translateX(-180%);
   }
-} */
+}
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media screen and (min-width: 375px) {
@@ -68,6 +64,9 @@
 
 /* Стилі для планшетів (768px і більше) */
 @media screen and (min-width: 768px) {
+  .covers.section {
+    padding: 48px 0;
+  }
   .covers-container.container {
     width: 768px;
     height: 960px;
@@ -76,8 +75,13 @@
 
 /* Стилі для настільних пристроїв (1440px і більше) */
 @media screen and (min-width: 1440px) {
+  .covers.section {
+    padding: 82px 0;
+  }
   .covers-container.container {
     width: 1440px;
     height: 960px;
+    backdrop-filter: blur(30px);
+    background: rgba(217, 217, 217, 0.04);
   }
 }
