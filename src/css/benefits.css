@@ -1,4 +1,3 @@
-
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
 
 .benefits.section {
@@ -20,8 +19,7 @@
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
 }
-.benefits-wrapper {
-}
+
 .benefits-wrapper-list {
   display: flex;
   flex-wrap: wrap;
