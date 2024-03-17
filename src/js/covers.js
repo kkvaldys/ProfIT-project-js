@@ -3,6 +3,7 @@ const coversSection = document.querySelector('.covers-section');
 // Функція, що перевіряє, чи елемент знаходиться в області видимості
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
+    console.log(rect);
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
