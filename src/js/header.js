@@ -26,10 +26,13 @@ const modalOrderBtn = document.querySelector('.mobile-order-btn')
 modalOrderBtn.addEventListener('click', () => {
     sidebar.classList.remove('is-open');
 
-//     // Находим элемент, к которому нужно прокрутить
-// const element = document.getElementById('work');
-
-// // Выполняем плавный скролл к этому элементу
-// element.scrollIntoView({ behavior: 'smooth' });
 }
 )
+
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-list-link')
+
+for (const mobileLink of mobileMenuLinks) {
+    mobileLink.addEventListener('click', () => {
+        sidebar.classList.remove('is-open')
+    })
+}
