@@ -20,37 +20,32 @@
   position: relative;
 }
 .covers-marquee {
-  /* width: 375px;
-  height: 508px; */
-  position: absolute;
+  width: inherit;
+  height: 508px;
   position: absolute;
   right: -800px;
   left: 0;
   overflow: hidden;
-  height: 100vh;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 50px; */
+  gap: 30px;
 }
 
 .covers-marquee-inner {
-  /* height: 100vh; */
+  width: 100%;
+  height: auto;
   display: flex;
   transform: rotate(16deg);
-  height: 128px;
 }
 
 .covers-line {
   margin-right: 10px;
-  width: 100%;
+  width: calc(100% / 6);
   height: 128px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  white-space: nowrap;
-  width: calc(100% / 6);
-
+  clip-path: inset(0);
   /* animation-name: coversLine; */
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -58,7 +53,6 @@
 }
 .covers-img {
   display: block;
-
   width: 100%;
   height: inherit;
 }
@@ -76,10 +70,36 @@
     width: 768px;
     height: 960px;
   }
-  /* .covers-line {
-    width: auto;
+  .covers-marquee {
+    width: inherit;
+    height: 960px;
+    position: absolute;
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .covers-marquee-inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    transform: rotate(16deg);
+  }
+  .covers-line {
+    margin-right: 10px;
+    width: calc(100% / 6);
     height: 314px;
-  } */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .covers-img {
+    width: 544px;
+    height: 314px;
+  }
 }
 
 /* Стилі для настільних пристроїв (1440px і більше) */
@@ -90,7 +110,7 @@
   .covers-container.container {
     width: 1440px;
     height: 960px;
-    backdrop-filter: blur(30px);
+    /* backdrop-filter: blur(30px); */
   }
 }
 @keyframes coversLine {
