@@ -30,6 +30,10 @@
   display: none;
 }
 
+.active {
+  display: block;
+}
+
 .menu-list-item {
   font-family: Inter Tight;
   font-size: 16px;
