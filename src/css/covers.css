@@ -3,7 +3,9 @@
 .covers.section {
   padding: 32px 0;
 }
-.covers-container.container {
+.covers-container.container .covers-content {
+  /* position: relative; */
+
   width: 375px;
   height: 508px;
   margin: 0;
@@ -14,50 +16,43 @@
   background-size: cover;
 }
 
-.covers-content {
-  width: 375px;
-  height: 508px;
-  position: relative;
-}
-.covers-wrapper {
-  width: 375px;
-  height: 508px;
+.covers-marquee {
+  /* width: 375px;
+  height: 508px; */
   position: absolute;
-  /* right: -800px;
+  right: -800px;
   left: 0;
-  overflow: hidden; */
+  overflow: hidden;
+}
+
+.covers-marquee-inner {
+  height: 100%;
+  display: flex;
+  transform: rotate(16deg);
+  /* height: 163px; */
 }
 
 .covers-line {
-  height: 314px;
-  display: flex;
-  gap: 10px;
-  transform: rotate(16deg);
-}
-
-.covers-list {
-  width: 544px;
-  height: 314px;
+  margin-right: 10px;
+  /* width: auto;
+  height: 163px; */
   display: flex;
   align-items: center;
   justify-content: center;
+
   white-space: nowrap;
-  /* flex-shrink: 0;
-   width: calc(100% / 8);
- 
+  width: calc(100% / 3);
+
   animation-name: coversLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
-}
-
-.covers-item {
-  width: 282.29px;
-  height: 162.94px;
+  animation-iteration-count: infinite;
 }
 .covers-img {
-  width: 282.29px;
-  height: 162.94px;
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: 163px;
 }
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
@@ -77,6 +72,10 @@
     width: 768px;
     height: 960px;
   }
+  /* .covers-line {
+    width: auto;
+    height: 314px;
+  } */
 }
 
 /* Стилі для настільних пристроїв (1440px і більше) */
@@ -87,11 +86,10 @@
   .covers-container.container {
     width: 1440px;
     height: 960px;
-    backdrop-filter: blur(30px);
-    background: rgba(217, 217, 217, 0.04);
+    /* backdrop-filter: blur(30px); */
   }
 }
-/* @keyframes coversLine {
+@keyframes coversLine {
   from {
     transform: translateX(-20%);
   }
@@ -99,4 +97,4 @@
   to {
     transform: translateX(-180%);
   }
-} */
+}
