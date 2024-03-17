@@ -131,6 +131,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: 302px;
+    margin-bottom: 30px;
     /* align-items: flex-end; */
   }
 
@@ -139,7 +141,26 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.29;
+    text-align: center;
     /* text-transform: uppercase; */
+  }
+
+  .mobile-order-btn {
+    display: flex;
+    max-width: 164px;
+    min-height: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    box-shadow: none;
+    border: none;
+    border-radius: 60px;
+  }
+
+  .mobile-order-btn:hover,
+  .mobile-order-btn:focus {
+    background-color: var(--btn-hover);
   }
 }
 
