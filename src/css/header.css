@@ -1,27 +1,60 @@
+.header-container {
+  position: absolute;
+  top: 32px;
+  z-index: 9999999;
+  width: 100vw;
+}
+
 .page-header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: transparent;
-  /* min-width: 320px;
-  max-width: 375px; */
+  height: 80px;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 320px;
+  max-width: 375px;
 }
+
+.hero {
+  position: relative;
+}
+
+.menu-btn {
+  display: none;
+}
+
 .menu-list {
   color: var(--text-color);
-  /* display: none; */
+  display: none;
+}
+
+.menu-list-item {
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: -0.001em;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .order-btn {
   display: none;
 }
 
-/* .order-btn {
-  display: none;
-} */
+.mobile-open-btn {
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  box-shadow: none;
+  border: none;
+}
 
-/* .burger {
-  display: none;
-} */
+.mobile-open-btn-icon {
+  stroke: var(--text-color);
+}
 
 .logo {
   display: flex;
@@ -32,20 +65,22 @@
   color: var(--text-color);
 }
 
-.header-menu {
+/* .header-menu {
   display: block;
   color: var(--text-color);
-}
-
-.menu-btn {
-  display: none;
-}
+} */
 
 @media only screen and (min-width: 768px) {
+  .page-header-container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+
   .order-btn {
     display: flex;
     min-width: 174px;
-    max-height: 56px;
+    min-height: 56px;
     justify-content: center;
     align-items: center;
     background-color: var(--btn-color);
@@ -55,20 +90,42 @@
     border-radius: 60px;
   }
 
-  .burger {
+  .order-btn:hover,
+  .order-btn:focus {
+    background-color: var(--btn-hover);
+  }
+
+  .open-btn {
     display: none;
   }
 
   .menu-btn {
     display: block;
-    background-color: var(--bg-color);
+    background-color: transparent;
     color: var(--text-color);
     box-shadow: none;
     border: none;
     text-decoration: underline;
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: -0.001em;
+    text-align: center;
+    width: 60px;
+    height: 39px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .page-header-container {
     position: relative;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .page-header-container {
+    max-width: 1440px;
   }
 }
