@@ -34,10 +34,10 @@
 }
 
 .covers-marquee-inner {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   transform: rotate(16deg);
-  /* height: 128px; */
+  height: 128px;
 }
 
 .covers-line {
@@ -51,7 +51,7 @@
   white-space: nowrap;
   width: calc(100% / 6);
 
-  animation-name: coversLine;
+  /* animation-name: coversLine; */
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
