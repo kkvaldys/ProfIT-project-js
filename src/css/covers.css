@@ -46,7 +46,7 @@
   white-space: nowrap;
   /* width: calc(100% / 3); */
 
-  animation-name: coversLine;
+  /* animation-name: coversLine; */
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
