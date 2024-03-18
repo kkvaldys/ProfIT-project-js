@@ -34,6 +34,7 @@ new Swiper('.swiper', {
     breakpoints: {
         320: {
             slidesPerView: 2,
+            spaceBetween: 0,
         },
         768: {
             slidesPerView: 3,
@@ -42,7 +43,7 @@ new Swiper('.swiper', {
             slidesPerView: 6,
         },
     },
-    
+    spaceBetween: 0,
     loop: true,
     keyboard: {
         enabled: true,
@@ -51,6 +52,7 @@ new Swiper('.swiper', {
     },
 
     initialSlide: 0,
+    
 });
 
 
