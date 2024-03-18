@@ -63,12 +63,16 @@
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .hero {
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 375px) {
    
     .hero {
-        background-image: url(../img/optima/hero_back_mobile\ copy.png);
-        /* margin: 0 auto; */
-        
+        background-image: url(../img/optima/hero_back_mobile\ copy.png);        
 
     }
 
@@ -86,7 +90,7 @@
 @media screen and (min-width: 768px) {
     .hero {
         background-image: url(../img/optima/hero_back_tablet\ copy.png);
-        /* background-position: -147px; */
+        
     }
 
     .hero-container {
@@ -120,9 +124,9 @@
 
 @media screen and (min-width: 1440px) {
     .hero {
-        /* background-position: center; */
         background-image: url(../img/optima/hero_back_desk\ copy.png);
         max-width: 1900px;
+        padding: 0;
     }
 
     .hero-container {
