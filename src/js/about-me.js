@@ -1,33 +1,35 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.css';
 
+//  const btnNotActive = document.querySelector('.svg-btn.clicked');
 const accordion = new Accordion('.about-accordion', {
     onOpen: (currElement) => {
-        const btnActiv = currElement.querySelector('.svg-btn');
-        const btnNotActive = document.querySelector('.svg-btn.clicked');
 
-        if (currElement !== document.querySelector('.is-active')) {
-            currElement = btnActiv;
-        } else {
-            currElement = btnNotActive;
-        }
-    }
+        const btnActiv = currElement
+            .querySelector('.svg-btn');
+     
+        btnActiv.classList.toggle('clicked')
+    },
+    onclose: (currElement) => {
+
+        const btnActiv = currElement
+            .querySelector('.svg-btn');
+     
+        btnActiv.classList.toggle('clicked')
+    },
 });
             
-        
-    
+
 
   
 
 accordion.open(0);
 
 new Swiper('.swiper', {
-    direction: 'horizontal',
     navigation: {
-
-      nextEl:'.swiper-button-next',
+     nextEl:".about-btn-left",
     },
     breakpoints: {
         320: {
@@ -47,12 +49,12 @@ new Swiper('.swiper', {
         onlyInViewport: true,
         pageUpDown:true,
     },
+
     initialSlide: 0,
 });
-;
-const swiperEl = document.querySelector('.about-skills-list');
-  const buttonEl = document.querySelector('.swiper-button-next');
 
-  buttonEl.addEventListener('click', () => {
-    swiperEl.swiper.slideNext();
-  });
+
+
+
+
+
