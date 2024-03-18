@@ -1,126 +1,108 @@
 
-// import Swiper from 'swiper';
-// // import { Navigation, Pagination } from 'swiper/modules';
-// // import 'swiper/css';
-// import 'swiper/css/navigation';
-// // import 'swiper/css/pagination';
-
-
-
-
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
+    const colors = {
+        active: {
+            stroke: '#fafafa',
+            border: 'rgba(250, 250, 250, 0.5)'
+        },
+        inactive: {
+            stroke: '#3B3B3B',
+            border: 'rgba(250, 250, 250, 0.2)' 
+        }
+    };
+
+    const prevButton = document.querySelector('.swiper-but-prev');
+    const nextButton = document.querySelector('.swiper-but-next');
+
+    prevButton.disabled = true;
+    nextButton.disabled = false; 
+
+    const swiper = new Swiper('.projects-container-swiper', {
         navigation: {
             nextEl: '.swiper-but-next',
             prevEl: '.swiper-but-prev',
         },
-
-        // pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable: true,
-        //     dynamicBullets: true,
-        //     rendeBullet: function (index, className) {
-        //         return '<span class="' + className + '">' + (index + 1) + '</span>';
-        //     },
-        // },
-        
-        // scrollbar: {
-        //     el: '.swiper-scrollbar',
-        //     draggable: true
-        // },
-        // simulateTouch: true,
-        // touchRatio: 1,
-        // touchAngle: 45,
-        // grabCursor: true,
-
         keyboard: {
             enabled: true,
             onlyInViewport: true,
             pageUpDown: true,
         },
-
-        mousewheel: {
-            sensitivity: 1,
-            // eventsTarget: ".swiper"
-        },
-
-        // autoHeight: true,
-        // Відступи між картинками
+        slidesPerView: 1,
         spaceBetween: 30,
-
-        freeMode: true,
-
-        speed: 300,
+        speed: 800,
 
         effect: 'cube',
-
         cubeEffect: {
-            slideShadows: true,
-            shadow: true,
-            shadowOffset: 20,
-            sadowScale: 0.94
+            // slideShadows: true,
+            // shadow: true,
         },
+  
+    });
 
+    updateButtonStates(); 
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') {
+            swiper.slidePrev();
+        } else if (event.key === 'ArrowRight') {
+            swiper.slideNext();
+        }
+    });
 
+    document.addEventListener('wheel', function (event) {
+        if (event.deltaY > 0) {
+            swiper.slideNext();
+        } else if (event.deltaY < 0) {
+            swiper.slidePrev();
+        }
+    });
 
+    function updateButtonStates() {
+        if (swiper.isBeginning) {
+            disableButton(prevButton);
+            enableButton(nextButton);
+        } else if (swiper.isEnd) {
+            enableButton(prevButton);
+            disableButton(nextButton);
+        } else {
+            enableButton(prevButton);
+            enableButton(nextButton);
+        }
+    }
+
+    // Задізейбл кнопку та змінити колір на неактивний
+    function disableButton(button) {
+        button.disabled = true;
+        button.style.borderColor = colors.inactive.border; 
+        button.querySelector('svg').style.stroke = colors.inactive.stroke;
+    }
+
+    function enableButton(button) {
+        button.disabled = false;
+        button.style.borderColor = colors.active.border; 
+        button.querySelector('svg').style.stroke = colors.active.stroke;
+    }
+
+    swiper.on('slideChange', function () {
+        updateButtonStates();
+
+        if (swiper.isBeginning) {
+            prevButton.style.borderColor = colors.inactive.border;
+            prevButton.querySelector('svg').style.stroke = colors.inactive.stroke;
+            nextButton.style.borderColor = colors.active.border;
+            nextButton.querySelector('svg').style.stroke = colors.active.stroke;
+        } else if (swiper.isEnd) {
+            prevButton.style.borderColor = colors.active.border;
+            prevButton.querySelector('svg').style.stroke = colors.active.stroke;
+            nextButton.style.borderColor = colors.inactive.border;
+            nextButton.querySelector('svg').style.stroke = colors.inactive.stroke;
+        } else {
+            prevButton.style.borderColor = colors.active.border;
+            prevButton.querySelector('svg').style.stroke = colors.active.stroke;
+            nextButton.style.borderColor = colors.active.border;
+            nextButton.querySelector('svg').style.stroke = colors.active.stroke;
+        }
     });
 });
-
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const swiperContainer = document.querySelector('.projects-container-swiper');
-//     if (swiperContainer) {
-//         const swiper = new Swiper(swiperContainer, {
-//             slidesPerView: 1,
-//             spaceBetween: 30,
-//             navigation: {
-//                 nextEl: '.swiper-button-next',
-//                 prevEl: '.swiper-button-prev',
-//             },
-//             keyboard: {
-//                 enabled: true,
-//             },
-//             mousewheel: {
-//                 enabled: true,
-//             },
-//             on: {
-//                 init: function () {
-//                     // Приховати кнопку "Наступний" при запуску слайдера
-//                     const nextButton = document.querySelector('.swiper-button-next');
-//                     if (nextButton) {
-//                         nextButton.disabled = true;
-//                     }
-//                 },
-//                 reachEnd: function () {
-//                     // Досягнуто кінця списку елементів
-//                     const nextButton = document.querySelector('.swiper-button-next');
-//                     if (nextButton) {
-//                         nextButton.disabled = true;
-//                     }
-//                 },
-//                 reachBeginning: function () {
-//                     // Досягнуто початку списку елементів
-//                     const prevButton = document.querySelector('.swiper-button-prev');
-//                     if (prevButton) {
-//                         prevButton.disabled = true;
-//                     }
-//                 },
-//                 fromEdge: function () {
-//                     // Відсунулися від краю списку елементів
-//                     const prevButton = document.querySelector('.swiper-button-prev');
-//                     const nextButton = document.querySelector('.swiper-button-next');
-//                     if (prevButton) {
-//                         prevButton.disabled = false;
-//                     }
-//                     if (nextButton) {
-//                         nextButton.disabled = false;
-//                     }
-//                 }
-//             }
-//         });
-//     }
-// });
