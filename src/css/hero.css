@@ -1,8 +1,9 @@
 .hero {
     background-image: url(../img/optima/hero_back_mobile\ copy.png);
-    background-position: center;
-    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
     position: relative;
+    max-width: 100%;
 }
 
 .hero-container {
@@ -63,10 +64,16 @@
 }
 
 @media screen and (min-width: 375px) {
+   
     .hero {
         background-image: url(../img/optima/hero_back_mobile\ copy.png);
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        
 
+    }
+
+    .hero-container {
+        width: 375px;
     }
 
     .hero-title {
@@ -84,6 +91,7 @@
 
     .hero-container {
         padding: 300px 104px 274px 0;
+        width: 768px;
 
     }
 
@@ -114,9 +122,11 @@
     .hero {
         /* background-position: center; */
         background-image: url(../img/optima/hero_back_desk\ copy.png);
+        max-width: 1900px;
     }
 
     .hero-container {
+        width: 1440px;
         padding: 300px 178px 330px;
 
 
