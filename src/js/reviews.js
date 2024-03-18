@@ -1,5 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 // Функція для отримання данних з сервера
 async function fetchReviews() {
@@ -21,14 +23,14 @@ async function fetchReviews() {
 
 // Функція для відображення відгуків в слайдері
 async function showReviews() {
-  const swiperWrapper = document.querySelector('.swiper-wrapper');
+  const swiperWrapper = document.querySelector('.swiper-wrapper-reviews');
   try {
     const reviews = await fetchReviews();
     console.log(reviews);
 
     reviews.forEach(review => {
       const listItem = document.createElement('li');
-      listItem.className = 'swiper-slide';
+      listItem.className = 'swiper-slide swiper-slide-reviews';
       listItem.innerHTML = `
         <div><img class="reviews-image" src="${review.avatar_url}" alt="${review.avatar_url}"></div>
         <h3 class="reviews-name">${review.author}</h3>
@@ -59,25 +61,34 @@ async function showReviews() {
         },
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-reviews',
+        prevEl: '.swiper-button-prev-reviews',
       },
       keyboard: {
         enabled: true,
       },
       direction: 'horizontal',
     });
-
-    // Обробник подій змінення розміру вікна для оновлення Swiper
-    window.addEventListener('resize', function () {
-      swiper.update();
-    });
   } catch (error) {
+    iziToast.error({
+      title: 'Error',
+      message: `Sorry, no reviews found. Please, try again!`,
+      maxWidth: 300,
+      progressBar: true,
+      progressBarEasing: false,
+      position: 'bottomRight',
+      color: '#1c1d20',
+      backgroundColor: '#ed3b44',
+    });
     const errorNotFound = document.createElement('div');
-    errorNotFound.innerHTML = `<p>Not found</p>`;
+    errorNotFound.innerHTML = `<p class="error-message-reviews">Not found</p>`;
     swiperWrapper.appendChild(errorNotFound);
-    const swiperButtonPrev = document.querySelector('.swiper-button-prev');
-    const swiperButtonNext = document.querySelector('.swiper-button-next');
+    const swiperButtonPrev = document.querySelector(
+      '.swiper-button-prev-reviews'
+    );
+    const swiperButtonNext = document.querySelector(
+      '.swiper-button-next-reviews'
+    );
     swiperButtonPrev.style.display = 'none';
     swiperButtonNext.style.display = 'none';
     console.error(error.message);
