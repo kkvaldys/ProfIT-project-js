@@ -8,7 +8,6 @@
 
 .hero-container {
     padding: 281px 0;
-
 }
 
 .hero-title {
@@ -19,7 +18,6 @@
     line-height: 1;
     letter-spacing: -0.03em;
     text-align: left;
-    /* color: #FAFAFA; */
 }
 
 .hero-list-link {
