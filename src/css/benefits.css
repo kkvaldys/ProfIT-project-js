@@ -6,7 +6,7 @@
 }
 .benefits-container {
   min-width: 320px;
-  width: 344px;
+  max-width: 375px;
   height: 1271px;
   margin: 0 auto;
   display: flex;
@@ -79,7 +79,7 @@
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media screen and (min-width: 375px) {
   .benefits-container {
-    width: 344px;
+    max-width: 375px;
     height: 1271px;
   }
 }
@@ -91,7 +91,7 @@
     padding-bottom: 48px;
   }
   .benefits-container {
-    width: 704px;
+    max-width: 704px;
     height: 731px;
   }
   .benefits-wrapper {
@@ -120,7 +120,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: inherit;
+    max-width: 1440px;
     height: 675px;
     margin: 0;
     gap: 16px;
