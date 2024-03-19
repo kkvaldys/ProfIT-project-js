@@ -1,0 +1,36 @@
+h3.faq-title.ac-header {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  height: 72px;
+}
+h3.faq-title.ac-trigger::after {
+  content: none;
+}
+
+.faq-list-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa99;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-content-title {
+    margin-bottom: 0%;
+  }
+
+  .faq-accordion {
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    column-gap: 20px;
+  }
+}
