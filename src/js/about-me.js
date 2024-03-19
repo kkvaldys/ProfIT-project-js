@@ -3,7 +3,7 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-//  const btnNotActive = document.querySelector('.svg-btn.clicked');
+
 const accordion = new Accordion('.about-accordion', {
     onOpen: (currElement) => {
 
@@ -20,43 +20,55 @@ const accordion = new Accordion('.about-accordion', {
         btnActiv.classList.toggle('clicked')
     },
 });
-            
+            accordion.open(0);
 
 
-  
-
-accordion.open(0);
-
-new Swiper('.swiper', {
-    navigation: {
-     nextEl:".about-btn-left",
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 0,
+document.addEventListener('DOMContentLoaded', function () {
+    const mySwiper = new Swiper('.about-scroll', {
+        navigation: {
+            nextEl: '.about-btn-left',
         },
-        768: {
-            slidesPerView: 3,
+        loop: true,
+        
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
         },
-        1440: {
-            slidesPerView: 6,
+        breakpoints: {
+            375: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 6,
+            }
         },
-    },
-    spaceBetween: 0,
-    loop: true,
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown:true,
-    },
-
-    initialSlide: 0,
+        on: {
+            click: function () {
+                if (this.isEnd) {
+                    this.slideTo(0);
+                }
+            }
+        },
     
+    
+    });
+    let previousSlide = null; 
+
+mySwiper.on('slideChange', function () {
+    if (previousSlide) {
+        previousSlide.style.backgroundColor = '';
+    }
+    
+    const activeSlide = mySwiper.slides[mySwiper.activeIndex];
+    
+    activeSlide.style.backgroundColor = '#ed3b44';
+    activeSlide.style.borderRadius = '50%';
+    previousSlide = activeSlide;
 });
-
-
-
+})
 
 
 
