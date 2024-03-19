@@ -121,17 +121,20 @@
   background: var(--btn-color);
   margin-left: 32px;
   margin-bottom: 32px;
-  transition: background-color ease-in-out 200ms;
+  transition: background-color ease-in-out 200ms, transform 200ms, box-shadow 200ms;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-btn:hover,
 .card-btn:focus {
   background: var(--btn-hover);
   transform: scale(1.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .card-btn:active {
   transform: translateY(2px);
+  box-shadow: none;
 }
 
 .card-img {
