@@ -1,28 +1,25 @@
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
 
-.covers-section.section {
+.covers-section {
   padding: 32px 0;
-  display: flex;
-  justify-content: center;
 }
-.covers-container.container {
-  width: 375px;
+.covers-container {
+  min-width: 320px;
   height: 508px;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
   background-color: var(--covers-bg);
   background-image: url(../img/optima/covers_back.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
-.covers-content {
-  position: relative;
-}
 .covers-marquee {
-  width: inherit;
-  height: 508px;
   position: absolute;
+  width: 375px;
+  height: 508px;
   right: -800px;
   left: 0;
   overflow: hidden;
@@ -31,22 +28,19 @@
   gap: 30px;
 }
 
-.covers-marquee-inner {
+.covers-line {
   width: 100%;
-  height: auto;
+  height: 162px;
   display: flex;
+  gap: 10px;
   transform: rotate(16deg);
 }
 
-.covers-line {
-  margin-right: 10px;
-  width: calc(100% / 6);
-  height: 128px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.covers-item {
+  min-width: 282px;
+  height: auto;
   clip-path: inset(0);
-  /* animation-name: coversLine; */
+  animation-name: coversLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -54,71 +48,73 @@
 .covers-img {
   display: block;
   width: 100%;
-  height: inherit;
+  height: auto;
 }
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
-@media screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) {
+  .covers-container {
+    max-width: 375px;
+    height: 508px;
+  }
 }
 
 /* Стилі для планшетів (768px і більше) */
-@media screen and (min-width: 768px) {
-  .covers-section.section {
+@media only screen and (min-width: 768px) {
+  .covers-section {
     padding: 48px 0;
   }
-  .covers-container.container {
-    width: 768px;
+
+  .covers-container {
+    max-width: 768px;
     height: 960px;
   }
+
   .covers-marquee {
     width: inherit;
     height: 960px;
-    position: absolute;
-    right: -800px;
-    left: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    gap: 60px;
   }
 
-  .covers-marquee-inner {
+  .covers-line {
     width: 100%;
     height: auto;
     display: flex;
-    transform: rotate(16deg);
+    gap: 30px;
   }
-  .covers-line {
-    margin-right: 10px;
-    width: calc(100% / 6);
+  .covers-item {
+    min-width: 544px;
     height: 314px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .covers-img {
-    width: 544px;
-    height: 314px;
+    clip-path: inset(0);
   }
 }
 
 /* Стилі для настільних пристроїв (1440px і більше) */
-@media screen and (min-width: 1440px) {
-  .covers-section.section {
+@media only screen and (min-width: 1440px) {
+  .covers-section {
     padding: 82px 0;
   }
-  .covers-container.container {
-    width: 1440px;
+
+  .covers-container {
+    max-width: 1440px;
     height: 960px;
-    /* backdrop-filter: blur(30px); */
+  }
+
+  .covers-marquee {
+    gap: 80px;
+  }
+
+  .covers-line {
+    gap: 80px;
   }
 }
+
 @keyframes coversLine {
   from {
     transform: translateX(-20%);
   }
 
   to {
-    transform: translateX(-180%);
+    transform: translateX(-280%);
   }
 }
