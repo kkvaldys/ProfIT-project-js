@@ -1,17 +1,30 @@
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
+.benefits {
+  margin: 0 auto;
+}
 
 .benefits.section {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .benefits-container {
-  min-width: 320px;
-  width: 344px;
+  width: 320px;
+  max-width: 375px;
   height: 1271px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
+}
+
+.benefits-title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 16px;
 }
 
 .benefits-title {
@@ -79,7 +92,7 @@
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media screen and (min-width: 375px) {
   .benefits-container {
-    width: 344px;
+    width: 375px;
     height: 1271px;
   }
 }
@@ -91,9 +104,14 @@
     padding-bottom: 48px;
   }
   .benefits-container {
-    width: 704px;
+    max-width: 768px;
     height: 731px;
   }
+
+  .benefits-title-wrapper {
+    padding-left: 32px;
+  }
+
   .benefits-wrapper {
     max-width: 704px;
     height: 675px;
@@ -116,11 +134,16 @@
     padding-top: 82px;
     padding-bottom: 82px;
   }
+
+  .benefits-title-wrapper {
+    padding-left: 0;
+  }
+
   .benefits-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: inherit;
+    max-width: inherit;
     height: 675px;
     margin: 0;
     gap: 16px;
