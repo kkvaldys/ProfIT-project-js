@@ -1,0 +1,120 @@
+/* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
+
+.covers-section {
+  padding: 32px 0;
+}
+.covers-container {
+  min-width: 320px;
+  height: 508px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: var(--covers-bg);
+  background-image: url(../img/optima/covers_back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.covers-marquee {
+  position: absolute;
+  width: 375px;
+  height: 508px;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.covers-line {
+  width: 100%;
+  height: 162px;
+  display: flex;
+  gap: 10px;
+  transform: rotate(16deg);
+}
+
+.covers-item {
+  min-width: 282px;
+  height: auto;
+  clip-path: inset(0);
+  animation-name: coversLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.covers-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
+@media only screen and (min-width: 375px) {
+  .covers-container {
+    max-width: 375px;
+    height: 508px;
+  }
+}
+
+/* Стилі для планшетів (768px і більше) */
+@media only screen and (min-width: 768px) {
+  .covers-section {
+    padding: 48px 0;
+  }
+
+  .covers-container {
+    max-width: 768px;
+    height: 960px;
+  }
+
+  .covers-marquee {
+    width: inherit;
+    height: 960px;
+    gap: 60px;
+  }
+
+  .covers-line {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+  }
+  .covers-item {
+    min-width: 544px;
+    height: 314px;
+    clip-path: inset(0);
+  }
+}
+
+/* Стилі для настільних пристроїв (1440px і більше) */
+@media only screen and (min-width: 1440px) {
+  .covers-section {
+    padding: 82px 0;
+  }
+
+  .covers-container {
+    max-width: 1440px;
+    height: 960px;
+  }
+
+  .covers-marquee {
+    gap: 80px;
+  }
+
+  .covers-line {
+    gap: 80px;
+  }
+}
+
+@keyframes coversLine {
+  50% {
+    transform: translateX(-280%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
