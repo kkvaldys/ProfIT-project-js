@@ -55,15 +55,16 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     });
-    let previousSlide = null; 
+    
+let previousSlide = null; 
 
 mySwiper.on('slideChange', function () {
     if (previousSlide) {
         previousSlide.style.backgroundColor = '';
     }
-    
+
     const activeSlide = mySwiper.slides[mySwiper.activeIndex];
-    
+
     activeSlide.style.backgroundColor = '#ed3b44';
     activeSlide.style.borderRadius = '50%';
     previousSlide = activeSlide;

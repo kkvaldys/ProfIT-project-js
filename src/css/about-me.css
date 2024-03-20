@@ -94,11 +94,15 @@ width: 100%;
     color: var(--main-text);
 }
 
- .about-skills-item .about-skills-text:hover {
+ .about-skills-item .about-skills-text:hover
+ {
      background-color: #ed3b44;
  }
 
-
+/* .clicked{
+background-color: #ed3b44;
+border-radius: 50%;
+} */
 
 .list-item-icon {
     stroke: var(--span-clr);
@@ -138,8 +142,9 @@ padding: 64px;
 .about-skills-text {
     width: 200px;
     height: 200px;}
+
 .about-skills-list {
-            max-width: 600px;
+            min-width: 600px;
     
         }
     
@@ -162,12 +167,12 @@ padding: 64px;
 /* Desktop */
 
 @media only screen and (min-width: 1440px) {
-    .about-section {
-            padding-top: 96px;
-            padding-bottom: 82px;
+.about-section {
+    padding-top: 96px;
+    padding-bottom: 82px;
         }
-    .about-content-section {
-                     padding-bottom: 96px;
+.about-content-section {
+    padding-bottom: 96px;
                  }
     .about-content-title{
         margin-bottom: 0%;
@@ -177,12 +182,15 @@ padding: 64px;
     gap: 16px;
 }
   .about-skills-list {
-      max-width: 1200px;
+      min-width: 1200px;
   }
 .elipse-cotainer {
     justify-content: space-between;
     align-items: center;
     margin-top: 32px;
     width: 100%;
+}
+.about-btn-left {
+    display: block;
 }
 }
