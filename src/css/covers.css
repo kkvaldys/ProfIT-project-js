@@ -11,7 +11,7 @@
   justify-content: center;
   position: relative;
   background-color: var(--covers-bg);
-  background-image: url(../img/optima/covers_back.png);
+  background-image: url(./img/optima/covers_back.png);
   background-repeat: no-repeat;
   background-position: center;
 }
