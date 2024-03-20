@@ -110,7 +110,7 @@ h3.about-accordion-title.ac-trigger::after {
   fill: none;
 }
 
-.swiper-slide {
+.about-skills-item {
   flex: 0;
 }
 
