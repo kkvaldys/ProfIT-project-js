@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(/img/optima/hero_back_mobile.png);
+  /* background-image: url(/img/optima/hero_back_mobile.png); */
   background-position: center;
   background-size: cover;
   position: relative;
@@ -54,16 +54,16 @@
 }
 
 @media (min-resolution: 192dpi) {
-  .hero {
+  /* .hero {
     background-image: url(./img/optima/hero_back2x_mobile.png),
       url(./img/optima/hero_back2x_tablet\ copy.png),
       url(./img/optima/hero_back2x_desk\ copy.png);
-  }
+  } */
 }
 
 @media screen and (min-width: 375px) {
   .hero {
-    background-image: url(./img/optima/hero_back_mobile.png);
+    /* background-image: url(./img/optima/hero_back_mobile.png); */
     margin: 0 auto;
   }
 
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(./img/optima/hero_back_tablet.png);
+    /* background-image: url(./img/optima/hero_back_tablet.png); */
     /* background-position: -147px; */
   }
 
@@ -108,7 +108,7 @@
 @media screen and (min-width: 1440px) {
   .hero {
     /* background-position: center; */
-    background-image: url(./img/optima/hero_back_desk.png);
+    /* background-image: url(./img/optima/hero_back_desk.png); */
   }
 
   .hero-container {
