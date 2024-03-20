@@ -21,11 +21,6 @@
   transition: 0.3s ease;
 }
 
-.faq-title-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 li.ac {
   background-color: #1c1d20;
   border-top: #fafafa;
@@ -61,10 +56,6 @@ h3.faq-accordion-title.ac-trigger::after {
 /* is-active rotating */
 .is-active .svg-btn {
   transform: rotate(180deg);
-}
-
-.faq-accordion-item {
-  padding: 5px;
 }
 
 .faq-accordion-item.is-active {
