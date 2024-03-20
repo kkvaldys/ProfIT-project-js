@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(/src/img/optima/hero_back_mobile.png);
+  background-image: url(../img/optima/hero_back_mobile.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -55,7 +55,7 @@
 
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: url(/src/img/optima/hero_back2x_mobile\ copy.png),
+    background-image: url(/src/img/optima/hero_back2x_mobile.png),
       url(/src/img/optima/hero_back2x_tablet\ copy.png),
       url(/src/img/optima/hero_back2x_desk\ copy.png);
   }
