@@ -56,21 +56,21 @@ body {
 /* Стилі для мобільних пристроїв (верстка гумова від 320px до 375px) */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   section {
-    padding: 0 16px;
+    padding: 32px 16px;
   }
 }
 
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media only screen and (min-width: 375px) {
   section {
-    padding: 0 16px;
+    padding: 48px 16px;
   }
 }
 
 /* Стилі для планшетів (768px і більше) */
 @media only screen and (min-width: 768px) {
   section {
-    padding: 0 32px;
+    padding: 82px 32px;
   }
 }
 
