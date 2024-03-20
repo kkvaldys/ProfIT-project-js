@@ -9,14 +9,14 @@ const accordion = new Accordion('.about-accordion', {
 
         const btnActiv = currElement
             .querySelector('.svg-btn');
-     
+
         btnActiv.classList.toggle('clicked')
     },
     onclose: (currElement) => {
 
         const btnActiv = currElement
             .querySelector('.svg-btn');
-     
+
         btnActiv.classList.toggle('clicked')
     },
 });
@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.about-btn-left',
         },
         loop: true,
-        
         keyboard: {
             enabled: true,
             onlyInViewport: true,
@@ -52,10 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         },
-    
-    
+
     });
-    
+
 let previousSlide = null; 
 
 mySwiper.on('slideChange', function () {
@@ -70,6 +68,3 @@ mySwiper.on('slideChange', function () {
     previousSlide = activeSlide;
 });
 })
-
-
-

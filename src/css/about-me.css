@@ -184,6 +184,15 @@ padding: 64px;
   .about-skills-list {
       min-width: 1200px;
   }
+  .ac-panel {
+     display: flex;
+     align-items: flex-start;
+     width: 100%;
+     max-width: 612px;
+     margin: 0 auto;
+     flex-direction: column;
+ }
+  
 .elipse-cotainer {
     justify-content: space-between;
     align-items: center;
@@ -193,4 +202,5 @@ padding: 64px;
 .about-btn-left {
     display: block;
 }
+
 }

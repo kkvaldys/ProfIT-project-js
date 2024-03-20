@@ -1,130 +1,120 @@
 .hero {
-    background-image: url(../img/optima/hero_back_mobile\ copy.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  background-image: url(../img/optima/hero_back_mobile.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-container {
-    padding: 281px 0;
-
+  padding: 281px 0;
 }
 
 .hero-title {
-    width: 100%;
-    font-family: Inter Tight;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    text-align: left;
-    /* color: #FAFAFA; */
+  width: 100%;
+  font-family: Inter Tight;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-align: left;
+  /* color: #FAFAFA; */
 }
 
 .hero-list-link {
-    display: flex;
-    margin: 0 auto;
-    gap: 4px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    position: absolute;
-    bottom: 32px;
-    /* left: 16px; */
+  display: flex;
+  margin: 0 auto;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: 32px;
+  /* left: 16px; */
 }
 
 .hero-link {
-    display: flex;
-    width: 35px;
-    height: 35px;
-    border-radius: 60px;
-    border: 1px solid #FAFAFA33;
-    align-items: center;
-    justify-content: center;
-    font-family: Inter Tight;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 0.83;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: #FAFAFA;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 60px;
+  border: 1px solid #fafafa33;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.83;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #fafafa;
 }
 
 .link-size {
-    width: 175px;
+  width: 175px;
 }
 
 @media (min-resolution: 192dpi) {
-    .hero {
-        background-image: url(../img/optima/hero_back2x_mobile\ copy.png), 
-        url(../img/optima/hero_back2x_tablet\ copy.png), 
-        url(../img/optima/hero_back2x_desk\ copy.png);
-    }
+  .hero {
+    background-image: url(../img/optima/hero_back2x_mobile.png);
+  }
 }
 
 @media screen and (min-width: 375px) {
-    .hero {
-        background-image: url(../img/optima/hero_back_mobile\ copy.png);
-        margin: 0 auto;
+  .hero {
+    background-image: url(../img/optima/hero_back_mobile.png);
+    margin: 0 auto;
+  }
 
-    }
-
-    .hero-title {
-        width: 343px;
-        font-size: 50px;
-    }
-
+  .hero-title {
+    width: 343px;
+    font-size: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
-        background-image: url(../img/optima/hero_back_tablet\ copy.png);
-        /* background-position: -147px; */
-    }
+  .hero {
+    background-image: url(../img/optima/hero_back_tablet.png);
+    /* background-position: -147px; */
+  }
 
-    .hero-container {
-        padding: 300px 104px 274px 0;
+  .hero-container {
+    padding: 300px 104px 274px 0;
+  }
 
-    }
+  .hero-title {
+    width: 632px;
+    font-size: 90px;
+  }
 
-    .hero-title {
-        width: 632px;
-        font-size: 90px;
-    }
+  .hero-list-link {
+    gap: 8px;
+    right: 32px;
+    justify-content: end;
+  }
 
-    .hero-list-link {
-        gap: 8px;
-        right: 32px;
-        justify-content: end;
-    }
+  .hero-link {
+    width: 53px;
+    height: 53px;
+    font-size: 16px;
+  }
 
-    .hero-link {
-        width: 53px;
-        height: 53px;
-        font-size: 16px;
-    }
-
-    .link-size {
-        width: 221px;
-    }
-
+  .link-size {
+    width: 221px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .hero {
-        /* background-position: center; */
-        background-image: url(../img/optima/hero_back_desk\ copy.png);
-    }
+  .hero {
+    /* background-position: center; */
+    background-image: url(../img/optima/hero_back_desk.png);
+  }
 
-    .hero-container {
-        padding: 300px 178px 330px;
+  .hero-container {
+    padding: 300px 178px 330px;
+  }
 
-
-    }
-
-    .hero-title {
-        width: 1084px;
-        font-size: 90px;
-    }
-
+  .hero-title {
+    width: 1084px;
+    font-size: 90px;
+  }
 }
