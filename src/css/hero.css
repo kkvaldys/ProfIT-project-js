@@ -55,9 +55,7 @@
 
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: url(../img/optima/hero_back2x_mobile.png),
-      url(../img/optima/hero_back2x_tablet\ copy.png),
-      url(../img/optima/hero_back2x_desk\ copy.png);
+    background-image: url(../img/optima/hero_back2x_mobile.png);
   }
 }
 
