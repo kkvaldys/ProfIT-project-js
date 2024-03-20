@@ -5,6 +5,11 @@
 .about-content-section {
   padding-bottom: 32px;
 }
+
+.about-skills-item {
+  margin-right: 0 !important;
+}
+
 .about-text {
   font-weight: 500;
   font-size: 24px;
