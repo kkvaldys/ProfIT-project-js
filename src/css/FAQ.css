@@ -63,6 +63,10 @@ h3.faq-accordion-title.ac-trigger::after {
   transform: rotate(180deg);
 }
 
+.faq-accordion-item {
+  padding: 5px;
+}
+
 .faq-accordion-item.is-active {
   border: 1px solid var(--btn-color);
 }
