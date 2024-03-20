@@ -4,7 +4,7 @@
   padding: 32px 0;
 }
 .covers-container {
-  min-width: 100%;
+  min-width: 320px;
   height: 508px;
   margin: 0;
   display: flex;
@@ -14,6 +14,12 @@
   background-image: url(../img/optima/covers_back.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.covers-container {
+  width: 320px;
+  max-width: 374px;
+  height: 508px;
 }
 
 .covers-marquee {
@@ -45,6 +51,7 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
 .covers-img {
   display: block;
   width: 100%;
@@ -54,8 +61,13 @@
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media only screen and (min-width: 375px) {
   .covers-container {
-    max-width: 375px;
+    width: 375px;
+    max-width: 767px;
     height: 508px;
+  }
+
+  .covers-marquee {
+    width: 100%;
   }
 }
 
