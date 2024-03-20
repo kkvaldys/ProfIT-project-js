@@ -234,8 +234,9 @@
 
 /* ==============*****desktop 1440px*****========== */
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+  .projects-container {
+    width: 1440px;
+    max-width: 100%;
   }
 
   .projects {
