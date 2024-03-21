@@ -1,3 +1,4 @@
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -22,12 +23,15 @@
 }
 
 .projects-container-swiper {
-  margin-bottom: 32px;
+  position: relative;
   width: inherit;
   height: 812px;
   border-radius: 24px;
-  background-color: var(--card-clr);
+
   overflow: hidden;
+  
+  background-color: var(--card-clr);
+  margin-bottom: 32px;
 }
 
 .swiper-navigation {
@@ -74,6 +78,7 @@
   display: flex;
   gap: 6px;
   align-items: center;
+  
   flex-wrap: wrap;
 
   padding-top: 32px;
@@ -92,6 +97,8 @@
   border-radius: 60px;
   padding: 13px 18px;
   height: 45px;
+  display: flex;
+  align-items: center;
 }
 
 .card-title {
@@ -134,11 +141,10 @@
   transform: translateY(2px);
   box-shadow: none;
 }
-
-.card-img {
-  width: 100%;
+.card-img-container {
   padding: 100px 16px;
 }
+
 
 .projects-nav-btn {
   display: flex;
@@ -146,6 +152,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.projects-swiper-slide {
+  width: 100%;
+  
+}
+.projects-swiper-slide {
+  margin-right: 0 !important;
+}
+
 
 /* ==============*****TABLET*****========== */
 @media screen and (min-width: 768px) {
@@ -158,13 +173,16 @@
     margin-bottom: 64px;
   }
 
-  .projects
-    .projects-container
-    .projects-container-swiper
-    .projects-swiper-slide {
-    min-width: 768px;
+
+  .projects-container {
+    max-width: 704px;
   }
 
+  .projects-swiper-slide {
+    min-width: 704px;
+  }
+
+ 
   .project-card {
     width: 100%;
   }
@@ -196,10 +214,15 @@
     margin-bottom: 64px;
   }
 
-  .card-img {
-    width: 768px;
+
+  .card-img-container {
     padding: 120px 45px;
   }
+
+  /* .card-img {
+    width: 768px;
+    padding: 120px 45px;
+  } */
 
   .projects-nav-btn {
     gap: 20px;
@@ -219,6 +242,7 @@
   }
 }
 
+
 /* ==============*****desktop 1440px*****========== */
 @media screen and (min-width: 1440px) {
   .projects-container {
@@ -231,24 +255,24 @@
     height: 625px;
   }
 
-  .project-card {
+  /* .project-card {
     width: 1376px;
-  }
 
-  /* .projects-swiper-slide {
-    margin-right: 0 !important;
-    display: flex !important;
-    flex-direction: row;
-    width: 1376px !important;
   } */
 
-  .projects
+  .projects-container .swiper {
+    margin-right: 0;
+    margin-left: 0;
+  } 
+
+    .projects
     .projects-container
     .projects-container-swiper
     .projects-swiper-slide {
     display: flex;
     flex-direction: row;
     min-width: 1376px;
+
   }
 
   .project-card {
@@ -262,8 +286,16 @@
     margin-bottom: 223px;
   }
 
-  .card-img {
+  /* .card-img {
     padding: 120px 37px;
     margin-bottom: 0;
   }
+    .card-img img{
+      width: 614px;
+    } */
+
+  .card-img-container {
+    padding: 120px 37px; 
+  }
+
 }
