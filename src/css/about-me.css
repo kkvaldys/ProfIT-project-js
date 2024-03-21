@@ -114,10 +114,12 @@ h3.about-accordion-title.ac-trigger::after {
   color: var(--main-text);
 }
 
-.about-skills-item .about-skills-text:hover {
+.about-skills-text:hover {
   background-color: #ed3b44;
 }
-
+/* .hovered{
+  background-color: #ed3b44;
+} */
 .list-item-icon {
   stroke: var(--span-clr);
   fill: none;
@@ -202,7 +204,7 @@ h3.about-accordion-title.ac-trigger::after {
     gap: 16px;
   }
   .about-skills-list {
-    max-width: 1312px;
+    max-width: 1200px;
   }
   .elipse-cotainer {
     justify-content: space-between;
