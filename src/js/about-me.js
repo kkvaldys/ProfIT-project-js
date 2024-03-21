@@ -82,6 +82,7 @@ const accordion = new Accordion('.about-accordion', {
 
     btnActiv.classList.toggle('clicked');
   },
+  showMultiple: true,
 });
 accordion.open(0);
 

@@ -3,7 +3,7 @@ import 'accordion-js/dist/accordion.min.css';
 
 new Accordion('.faq-accordion', {
   duration: 400,
-  showMultiple: false,
+  showMultiple: true,
   onOpen: function (currentElement) {
     console.log(currentElement);
   },

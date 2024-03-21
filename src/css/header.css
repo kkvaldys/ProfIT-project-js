@@ -25,6 +25,11 @@
   display: none;
 }
 
+.menu-btn:hover {
+  background-color: var(--btn-hover);
+  border-radius: 32px;
+}
+
 .menu-list {
   color: var(--text-color);
   opacity: 0;
@@ -227,6 +232,10 @@
 
 @media only screen and (min-width: 1440px) {
   .page-header-container {
-    max-width: 1440px;
+    min-width: 1440px;
+  }
+
+  .header-section {
+    padding: 0;
   }
 }
