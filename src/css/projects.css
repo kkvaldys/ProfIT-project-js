@@ -1,10 +1,4 @@
-.projects {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -156,15 +150,8 @@
 
 /* ==============*****TABLET*****========== */
 @media screen and (min-width: 768px) {
-  .projects {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
   .projects-container {
     max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   .projects-container-swiper {
@@ -180,7 +167,7 @@
   }
 
   .project-card {
-    width: 704px;
+    width: 768px;
   }
 
   .projects-list {
@@ -211,6 +198,7 @@
   }
 
   .card-img {
+    width: 768px;
     padding: 120px 45px;
   }
 
@@ -237,11 +225,6 @@
   .projects-container {
     width: 1440px;
     max-width: 100%;
-  }
-
-  .projects {
-    padding-top: 82px;
-    padding-bottom: 82px;
   }
 
   .projects-container-swiper {
