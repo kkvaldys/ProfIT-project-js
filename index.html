@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/ProfIT-project-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/ProfIT-project-js/assets/vendor-7e083a22.js">
     <link rel="stylesheet" href="/ProfIT-project-js/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/ProfIT-project-js/assets/index-d24ecefb.css">
+    <link rel="stylesheet" href="/ProfIT-project-js/assets/index-1c64ae0d.css">
   </head>
   <body>
     <header id="header" class="header-container">
@@ -316,11 +316,11 @@
 </section>
 
       <section class="projects" id="projects">
-  <div class="projects-container container">
+  <div class="projects-container">
     <h2 class="title">Projects</h2>
 
     <div class="projects-container-swiper swiper">
-      <ul class="swiper-wrapper">
+      <ul class="projects-swiper-wrapper swiper-wrapper">
         <li class="projects-swiper-slide swiper-slide">
           <div class="project-card">
             <ul class="projects-list">
@@ -340,31 +340,33 @@
             >
           </div>
 
-          <picture>
-            <!-- Desktop screen -->
-            <source
-              media="(min-width: 1440px)"
-              srcset="/ProfIT-project-js/assets/projects_screen_desk-9925e3dc.png 1x, /ProfIT-project-js/assets/projects_screen_desk@2x-0f6ec2c9.png 2x"
-              type="image/png"
-            />
-            <!-- Tablet screen -->
-            <source
-              media="(min-width: 768px)"
-              srcset="/ProfIT-project-js/assets/projects_screen_desk-9925e3dc.png 1x, /ProfIT-project-js/assets/projects_screen_desk@2x-0f6ec2c9.png 2x"
-              type="image/png"
-            />
-            <!-- Mobile screen -->
-            <source
-              media="(min-width: 375px)"
-              srcset="/ProfIT-project-js/assets/projects_screen_mobile-df6c030e.png 1x, /ProfIT-project-js/assets/projects_screen_mobile@2x-ead58511.png 2x"
-              type="image/png"
-            />
-            <img
-              class="card-img"
-              src="/ProfIT-project-js/assets/projects_screen_mobile-df6c030e.png"
-              alt="Screen website 1"
-            />
-          </picture>
+          <div class="card-img-container">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                srcset="/ProfIT-project-js/assets/projects_screen_desk-9925e3dc.png 1x, /ProfIT-project-js/assets/projects_screen_desk@2x-0f6ec2c9.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/ProfIT-project-js/assets/projects_screen_desk-9925e3dc.png 1x, /ProfIT-project-js/assets/projects_screen_desk@2x-0f6ec2c9.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(min-width: 375px)"
+                srcset="/ProfIT-project-js/assets/projects_screen_mobile-df6c030e.png 1x, /ProfIT-project-js/assets/projects_screen_mobile@2x-ead58511.png 2x"
+                type="image/png"
+              />
+              <img
+                class="card-img"
+                src="/ProfIT-project-js/assets/projects_screen_mobile-df6c030e.png"
+                alt="Screen website 1"
+              />
+            </picture>
+          </div>
         </li>
 
         <li class="projects-swiper-slide swiper-slide">
@@ -385,32 +387,34 @@
               >See project</a
             >
           </div>
-          <picture>
-            <!-- Desktop screen -->
-            <source
-              media="(min-width: 1440px)"
-              srcset="/ProfIT-project-js/assets/projects_dog_desk-731c4e84.png 1x, /ProfIT-project-js/assets/projects_dog_desk@2x-a87399e9.png 2x"
-              type="image/png"
-            />
-            <!-- Tablet screen -->
-            <source
-              media="(min-width: 768px)"
-              srcset="/ProfIT-project-js/assets/projects_dog_desk-731c4e84.png 1x, /ProfIT-project-js/assets/projects_dog_desk@2x-a87399e9.png 2x"
-              type="image/png"
-            />
-            <!-- Mobile screen -->
-            <source
-              media="(min-width: 375px)"
-              srcset="/ProfIT-project-js/assets/projects_dog_mobile-3b6e13d4.png 1x, /ProfIT-project-js/assets/projects_dog_mobile@2x-78ced5eb.png 2x"
-              type="image/png"
-            />
+          <div class="card-img-container">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                srcset="/ProfIT-project-js/assets/projects_dog_desk-731c4e84.png 1x, /ProfIT-project-js/assets/projects_dog_desk@2x-a87399e9.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/ProfIT-project-js/assets/projects_dog_desk-731c4e84.png 1x, /ProfIT-project-js/assets/projects_dog_desk@2x-a87399e9.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(min-width: 375px)"
+                srcset="/ProfIT-project-js/assets/projects_dog_mobile-3b6e13d4.png 1x, /ProfIT-project-js/assets/projects_dog_mobile@2x-78ced5eb.png 2x"
+                type="image/png"
+              />
 
-            <img
-              class="card-img"
-              src="/ProfIT-project-js/assets/projects_dog_mobile-3b6e13d4.png"
-              alt="Screen website 2"
-            />
-          </picture>
+              <img
+                class="card-img"
+                src="/ProfIT-project-js/assets/projects_dog_mobile-3b6e13d4.png"
+                alt="Screen website 2"
+              />
+            </picture>
+          </div>
         </li>
 
         <li class="projects-swiper-slide swiper-slide">
@@ -431,32 +435,34 @@
               >See project</a
             >
           </div>
-          <picture>
-            <!-- Desktop screen -->
-            <source
-              media="(min-width: 1440px)"
-              srcset="/ProfIT-project-js/assets/projects_people_desk-c886bb61.png 1x, /ProfIT-project-js/assets/projects_people_desk@2x-c081ac27.png 2x"
-              type="image/png"
-            />
-            <!-- Tablet screen -->
-            <source
-              media="(min-width: 768px)"
-              srcset="/ProfIT-project-js/assets/projects_people_desk-c886bb61.png 1x, /ProfIT-project-js/assets/projects_people_desk@2x-c081ac27.png 2x"
-              type="image/png"
-            />
-            <!-- Mobile screen -->
-            <source
-              media="(min-width: 375px)"
-              srcset="/ProfIT-project-js/assets/projects_people_mobile-70f8fb3d.png 1x, /ProfIT-project-js/assets/projects_people_mobile@2x-ea6cf20f.png 2x"
-              type="image/png"
-            />
+          <div class="card-img-container">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                srcset="/ProfIT-project-js/assets/projects_people_desk-c886bb61.png 1x, /ProfIT-project-js/assets/projects_people_desk@2x-c081ac27.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="/ProfIT-project-js/assets/projects_people_desk-c886bb61.png 1x, /ProfIT-project-js/assets/projects_people_desk@2x-c081ac27.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(min-width: 375px)"
+                srcset="/ProfIT-project-js/assets/projects_people_mobile-70f8fb3d.png 1x, /ProfIT-project-js/assets/projects_people_mobile@2x-ea6cf20f.png 2x"
+                type="image/png"
+              />
 
-            <img
-              class="card-img"
-              src="/ProfIT-project-js/assets/projects_people_mobile-70f8fb3d.png"
-              alt="Screen website 3"
-            />
-          </picture>
+              <img
+                class="card-img"
+                src="/ProfIT-project-js/assets/projects_people_mobile-70f8fb3d.png"
+                alt="Screen website 3"
+              />
+            </picture>
+          </div>
         </li>
       </ul>
     </div>
