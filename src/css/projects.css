@@ -7,6 +7,11 @@
   margin-right: 0 !important;
 } */
 
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   font-weight: 600;
   font-size: 16px;
@@ -18,6 +23,7 @@
 }
 
 .projects-container {
+  min-width: 320px;
   max-width: 375px;
 }
 
@@ -142,6 +148,8 @@
 }
 .card-img-container {
   padding: 100px 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-nav-btn {

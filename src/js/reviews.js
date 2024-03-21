@@ -40,7 +40,7 @@ async function showReviews() {
     });
 
     // Ініціалізація Swiper
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper-reviews', {
       // Налаштування Swiper
       slidesPerView: 1,
       spaceBetween: 16,
