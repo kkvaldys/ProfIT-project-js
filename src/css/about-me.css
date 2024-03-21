@@ -19,6 +19,20 @@
   color: #fafafa;
 }
 
+.about-list-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  padding-bottom: 32px;
+}
+
+.about-list-text:last-child {
+  padding-bottom: 20px;
+}
+
 .about-content-title {
   border-radius: 24px;
   height: 500px;
@@ -46,6 +60,9 @@ li.ac {
   border-top: #fafafa;
   border-left: #fafafa;
   border-right: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 h3.about-accordion-title.ac-header {
   display: flex;
@@ -57,7 +74,7 @@ h3.about-accordion-title.ac-header {
   line-height: 150%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  height: 72px;
+  height: 40px;
 }
 h3.about-accordion-title.ac-trigger::after {
   content: none;
@@ -156,6 +173,18 @@ h3.about-accordion-title.ac-trigger::after {
     width: 40px;
     height: 40px;
   }
+
+  .about-list-text {
+    padding-bottom: 16px;
+  }
+
+  .about-list-text:last-child {
+    padding-bottom: 32px;
+  }
+
+  .about-list-item {
+    margin-bottom: 32px;
+  }
 }
 
 /* Desktop */
@@ -183,5 +212,15 @@ h3.about-accordion-title.ac-trigger::after {
     align-items: center;
     margin-top: 32px;
     width: 100%;
+  }
+
+  .about-list-text {
+    padding-bottom: 32px;
+    width: 612px;
+  }
+  .about-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 68px;
   }
 }
