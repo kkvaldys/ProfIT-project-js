@@ -210,29 +210,16 @@ h3.about-accordion-title.ac-trigger::after {
     align-items: end;
   }
 
-  .about-list-text {
-    padding-bottom: 32px;
-    width: 612px;
-  }
   .about-list-item {
     display: flex;
     flex-direction: column;
     margin-right: 68px;
   }
-    li.ac {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
+  
   
     .about-list-text {
       padding-bottom: 10px;
       width: 612px;
     }
   
-    .about-list-item {
-      display: flex;
-      flex-direction: column;
-      margin-right: 68px;
-    }
 }

@@ -174,13 +174,10 @@ function showSkills() {
     },
    
   });
-  // Ініціалізація Swiper
  
-  console.log(mySwiper);
   let previousSlide = null;
 
   // const firstItem = document.querySelector('.about-skills-text');
-  // firstItem.style.backgroundColor = '#ed3b44';
   const firstEl = document.querySelector('.about-skills-text:first-child');
   firstEl.style.backgroundColor = '#ed3b44';
   mySwiper.on('slideChange', function () {
@@ -188,10 +185,10 @@ function showSkills() {
     if (previousSlide) {
       previousSlide.style.backgroundColor = '';
     }
-    const activeSlide = mySwiper.slides[mySwiper.activeIndex];
-    activeSlide.style.backgroundColor = '#ed3b44';
-    activeSlide.style.borderRadius = '50%';
-    previousSlide = activeSlide;
+    const activeScrol = mySwiper.slides[mySwiper.activeIndex];
+    activeScrol.style.backgroundColor = '#ed3b44';
+    activeScrol.style.borderRadius = '50%';
+    previousSlide = activeScrol;
     mySwiper.on('click', function () {
       if (previousSlide) {
         previousSlide.style.backgroundColor = '';
@@ -202,7 +199,7 @@ function showSkills() {
     
   });
 
-  updateButton();
+  // updateButton();
 
   document.addEventListener('keydown', function (event) {
     if (event.key === 'ArrowLeft') {
@@ -212,17 +209,17 @@ function showSkills() {
     }
   });
 
-  function updateButton() {
-    if (mySwiper.isBeginning) {
-      disableButton(prevButton);
-      enableButton(nextButton);
-    } else if (mySwiper.isEnd) {
-      enableButton(prevButton);
-      disableButton(nextButton);
-    }else {
-      enableButton(prevButton);
-      enableButton(nextButton);
-    }
-  }
+  // function updateButton() {
+  //   if (mySwiper.isBeginning) {
+  //     disableButton(prevButton);
+  //     enableButton(nextButton);
+  //   } else if (mySwiper.isEnd) {
+  //     enableButton(prevButton);
+  //     disableButton(nextButton);
+  //   }else {
+  //     enableButton(prevButton);
+  //     enableButton(nextButton);
+  //   }
+  // }
 }
 showSkills();
