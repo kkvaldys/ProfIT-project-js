@@ -19,19 +19,6 @@
   color: #fafafa;
 }
 
-.about-list-text {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--main-text);
-  padding-bottom: 32px;
-}
-
-.about-list-text:last-child {
-  padding-bottom: 20px;
-}
 
 .about-content-title {
   border-radius: 24px;
@@ -71,11 +58,14 @@ h3.about-accordion-title.ac-header {
   line-height: 150%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  height: 40px;
+  height: 36px;
+  margin-top: 20px;
+  margin-bottom: 32px;
 }
 h3.about-accordion-title.ac-trigger::after {
   content: none;
 }
+
 
 .about-list-text {
   font-family: var(--font-family);
@@ -84,9 +74,12 @@ h3.about-accordion-title.ac-trigger::after {
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--main-text);
-  padding-top: 16px;
+  padding-bottom: 32px;
+}
+.about-list-text:last-child {
   padding-bottom: 20px;
 }
+
 .about-skills-list {
   max-width: 260px;
 }
@@ -114,7 +107,7 @@ h3.about-accordion-title.ac-trigger::after {
   color: var(--main-text);
 }
 
-.about-skills-item .about-skills-text:hover {
+.about-skills-text:hover {
   background-color: #ed3b44;
 }
 
@@ -150,6 +143,10 @@ h3.about-accordion-title.ac-trigger::after {
     height: 700px;
     padding: 64px;
   }
+    h3.about-accordion-title.ac-header{
+      height: 40px;
+      margin-top: 32px;
+    }
   .about-skills-text {
     width: 200px;
     height: 200px;
@@ -178,10 +175,6 @@ h3.about-accordion-title.ac-trigger::after {
   .about-list-text:last-child {
     padding-bottom: 32px;
   }
-
-  .about-list-item {
-    margin-bottom: 32px;
-  }
 }
 
 /* Desktop */
@@ -202,7 +195,7 @@ h3.about-accordion-title.ac-trigger::after {
     gap: 16px;
   }
   .about-skills-list {
-    max-width: 1312px;
+    max-width: 1200px;
   }
   .elipse-cotainer {
     justify-content: space-between;
@@ -217,13 +210,16 @@ h3.about-accordion-title.ac-trigger::after {
     align-items: end;
   }
 
-  .about-list-text {
-    padding-bottom: 32px;
-    width: 612px;
-  }
   .about-list-item {
     display: flex;
     flex-direction: column;
     margin-right: 68px;
   }
+  
+  
+    .about-list-text {
+      padding-bottom: 10px;
+      width: 612px;
+    }
+  
 }
