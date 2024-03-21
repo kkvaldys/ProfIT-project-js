@@ -162,7 +162,7 @@
     .projects-container
     .projects-container-swiper
     .projects-swiper-slide {
-    min-width: 704px;
+    min-width: 768px;
   }
 
   .project-card {
