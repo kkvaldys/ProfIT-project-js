@@ -65,7 +65,6 @@ h3.faq-accordion-title.ac-trigger::after {
 /* media */
 @media (min-width: 320px) and (max-width: 375px) {
   .faq__acc-container {
-    width: 320px;
     max-width: 375px;
     font-size: 20px;
   }

@@ -1,1 +1,11 @@
-1. 
+1. https://github.com/kkvaldys/ProfIT-project-js/pull/1#event-12139899773
+2. https://github.com/kkvaldys/ProfIT-project-js/pull/2#issuecomment-2001973895
+3. https://github.com/kkvaldys/ProfIT-project-js/pull/4#event-12140953860
+4. https://github.com/kkvaldys/ProfIT-project-js/pull/5#event-12151098883
+5. https://github.com/kkvaldys/ProfIT-project-js/pull/7#event-12172447737
+6. https://github.com/kkvaldys/ProfIT-project-js/pull/6#event-12160422507
+7. https://github.com/kkvaldys/ProfIT-project-js/pull/9#issuecomment-2006088233
+8. https://github.com/kkvaldys/ProfIT-project-js/pull/10#event-12170996502
+9. https://github.com/kkvaldys/ProfIT-project-js/pull/11#event-12171808457
+10. https://github.com/kkvaldys/ProfIT-project-js/pull/13#event-12173191906
+11. https://github.com/kkvaldys/ProfIT-project-js/pull/14#event-12177153685

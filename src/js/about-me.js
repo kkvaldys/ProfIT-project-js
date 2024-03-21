@@ -82,6 +82,7 @@ const accordion = new Accordion('.about-accordion', {
 
     btnActiv.classList.toggle('clicked');
   },
+  showMultiple: true,
 });
 accordion.open(0);
 
@@ -90,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.about-btn-left',
     },
+    centeredSlides: true,
     loop: true,
     keyboard: {
       enabled: true,

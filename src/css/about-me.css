@@ -211,6 +211,12 @@ h3.about-accordion-title.ac-trigger::after {
     width: 100%;
   }
 
+  li.ac {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
   .about-list-text {
     padding-bottom: 32px;
     width: 612px;

@@ -104,13 +104,16 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
+  section.hero {
+    max-width: none;
     /* background-position: center; */
     background-image: url(../img/optima/hero_back_desk.png);
   }
 
   .hero-container {
     padding: 300px 178px 330px;
+    max-width: 1440px;
+    justify-content: flex-start;
   }
 
   .hero-title {
