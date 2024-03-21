@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         effect: 'cube',
         cubeEffect: {
-            // slideShadows: true,
-            // shadow: true,
+       
         },
+
     });
 
     updateButtonStates(); 

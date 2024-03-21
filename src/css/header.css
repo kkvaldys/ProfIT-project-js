@@ -5,6 +5,10 @@
   width: 100vw;
 }
 
+.header-section {
+  padding: 0;
+}
+
 .page-header-container {
   display: flex;
   flex-direction: row;
@@ -23,6 +27,11 @@
 
 .menu-btn {
   display: none;
+}
+
+.menu-btn:hover {
+  background-color: var(--btn-hover);
+  border-radius: 32px;
 }
 
 .menu-list {
@@ -67,8 +76,16 @@
     border: none;
   }
 
+  .header-section {
+    padding: 0;
+  }
+
   .mobile-open-btn-icon {
     stroke: var(--text-color);
+  }
+
+  .page-header-container {
+    max-width: 767px;
   }
 
   .mobile-menu {
@@ -175,7 +192,7 @@
   .page-header-container {
     padding-left: 32px;
     padding-right: 32px;
-    max-width: 768px;
+    max-width: 1439px;
   }
 
   .order-btn {
@@ -227,6 +244,10 @@
 
 @media only screen and (min-width: 1440px) {
   .page-header-container {
-    max-width: 1440px;
+    min-width: 1440px;
+  }
+
+  .header-section {
+    padding: 0;
   }
 }

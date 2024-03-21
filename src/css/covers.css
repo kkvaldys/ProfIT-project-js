@@ -11,14 +11,20 @@
   justify-content: center;
   position: relative;
   background-color: var(--covers-bg);
-  background-image: url(./img/optima/covers_back.png);
+  background-image: url(../img/optima/covers_back.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.covers-container {
+  width: 320px;
+  max-width: 374px;
+  height: 508px;
+}
+
 .covers-marquee {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 508px;
   right: -800px;
   left: 0;
@@ -45,6 +51,7 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
 .covers-img {
   display: block;
   width: 100%;
@@ -54,8 +61,13 @@
 /* Стилі для мобільних пристроїв (адаптивна верстка з 375px) */
 @media only screen and (min-width: 375px) {
   .covers-container {
-    max-width: 375px;
+    width: 375px;
+    max-width: 767px;
     height: 508px;
+  }
+
+  .covers-marquee {
+    width: 100%;
   }
 }
 
@@ -66,7 +78,8 @@
   }
 
   .covers-container {
-    max-width: 768px;
+    width: 768px;
+    max-width: 100%;
     height: 960px;
   }
 
@@ -93,10 +106,12 @@
 @media only screen and (min-width: 1440px) {
   .covers-section {
     padding: 82px 0;
+    max-width: none;
   }
 
   .covers-container {
-    max-width: 1440px;
+    width: 1440px;
+    max-width: 100%;
     height: 960px;
   }
 

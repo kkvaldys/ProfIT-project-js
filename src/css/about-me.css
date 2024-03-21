@@ -5,6 +5,11 @@
 .about-content-section {
   padding-bottom: 32px;
 }
+
+.about-skills-item {
+  margin-right: 0 !important;
+}
+
 .about-text {
   font-weight: 500;
   font-size: 24px;
@@ -12,6 +17,20 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
+}
+
+.about-list-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  padding-bottom: 32px;
+}
+
+.about-list-text:last-child {
+  padding-bottom: 20px;
 }
 
 .about-content-title {
@@ -52,7 +71,7 @@ h3.about-accordion-title.ac-header {
   line-height: 150%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  height: 72px;
+  height: 40px;
 }
 h3.about-accordion-title.ac-trigger::after {
   content: none;
@@ -151,6 +170,18 @@ h3.about-accordion-title.ac-trigger::after {
     width: 40px;
     height: 40px;
   }
+
+  .about-list-text {
+    padding-bottom: 16px;
+  }
+
+  .about-list-text:last-child {
+    padding-bottom: 32px;
+  }
+
+  .about-list-item {
+    margin-bottom: 32px;
+  }
 }
 
 /* Desktop */
@@ -171,12 +202,28 @@ h3.about-accordion-title.ac-trigger::after {
     gap: 16px;
   }
   .about-skills-list {
-    max-width: 1200px;
+    max-width: 1312px;
   }
   .elipse-cotainer {
     justify-content: space-between;
     align-items: center;
     margin-top: 32px;
     width: 100%;
+  }
+
+  li.ac {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .about-list-text {
+    padding-bottom: 32px;
+    width: 612px;
+  }
+  .about-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 68px;
   }
 }
