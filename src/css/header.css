@@ -5,6 +5,10 @@
   width: 100vw;
 }
 
+.header-section {
+  padding: 0;
+}
+
 .page-header-container {
   display: flex;
   flex-direction: row;
@@ -72,8 +76,16 @@
     border: none;
   }
 
+  .header-section {
+    padding: 0;
+  }
+
   .mobile-open-btn-icon {
     stroke: var(--text-color);
+  }
+
+  .page-header-container {
+    max-width: 767px;
   }
 
   .mobile-menu {
@@ -180,7 +192,7 @@
   .page-header-container {
     padding-left: 32px;
     padding-right: 32px;
-    max-width: 768px;
+    max-width: 1439px;
   }
 
   .order-btn {

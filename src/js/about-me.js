@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.about-btn-left',
     },
+    centeredSlides: true,
     loop: true,
     keyboard: {
       enabled: true,
