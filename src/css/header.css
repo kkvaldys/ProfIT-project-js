@@ -113,12 +113,13 @@
     position: fixed;
     top: 0;
     right: 0;
-    min-width: 375px;
+    width: 100%;
     max-width: 767px;
     height: 100%;
     z-index: 99999999;
     background-color: var(--text-color);
     background-image: url(../img/optima/modal_back.png);
+    scale: 1.02;
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: cover;

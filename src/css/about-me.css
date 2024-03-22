@@ -10,6 +10,10 @@
   margin-right: 0 !important;
 }
 
+.about-image {
+  width: 100%;
+}
+
 .about-text {
   font-weight: 500;
   font-size: 24px;
@@ -18,7 +22,6 @@
   text-transform: uppercase;
   color: #fafafa;
 }
-
 
 .about-content-title {
   border-radius: 24px;
@@ -65,7 +68,6 @@ h3.about-accordion-title.ac-header {
 h3.about-accordion-title.ac-trigger::after {
   content: none;
 }
-
 
 .about-list-text {
   font-family: var(--font-family);
@@ -143,10 +145,10 @@ h3.about-accordion-title.ac-trigger::after {
     height: 700px;
     padding: 64px;
   }
-    h3.about-accordion-title.ac-header{
-      height: 40px;
-      margin-top: 32px;
-    }
+  h3.about-accordion-title.ac-header {
+    height: 40px;
+    margin-top: 32px;
+  }
   .about-skills-text {
     width: 200px;
     height: 200px;
@@ -215,11 +217,9 @@ h3.about-accordion-title.ac-trigger::after {
     flex-direction: column;
     margin-right: 68px;
   }
-  
-  
-    .about-list-text {
-      padding-bottom: 10px;
-      width: 612px;
-    }
-  
+
+  .about-list-text {
+    padding-bottom: 10px;
+    width: 612px;
+  }
 }

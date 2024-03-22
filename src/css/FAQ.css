@@ -60,6 +60,7 @@ h3.faq-accordion-title.ac-trigger::after {
 
 .faq-accordion-item.is-active {
   border: 1px solid var(--btn-color);
+  background-color: var(--card-clr);
 }
 
 /* media */
@@ -91,7 +92,7 @@ h3.faq-accordion-title.ac-trigger::after {
   }
 
   .faq-accordion-item:hover {
-    border: 1px solid var(--btn-color);
+    background-color: var(--card-clr);
   }
 
   .faq-section {
