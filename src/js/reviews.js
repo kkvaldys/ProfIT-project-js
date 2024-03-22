@@ -13,7 +13,7 @@ async function fetchReviews() {
       throw new Error('Failed to fetch reviews');
     }
     const data = await response.json();
-    console.log(data);
+
     return data;
   } catch (error) {
     console.log(error.message);
@@ -26,7 +26,6 @@ async function showReviews() {
   const swiperWrapper = document.querySelector('.swiper-wrapper-reviews');
   try {
     const reviews = await fetchReviews();
-    console.log(reviews);
 
     reviews.forEach(review => {
       const listItem = document.createElement('li');
@@ -66,6 +65,7 @@ async function showReviews() {
       },
       keyboard: {
         enabled: true,
+        onlyInViewport: true,
       },
       direction: 'horizontal',
     });

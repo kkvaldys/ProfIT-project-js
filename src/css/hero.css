@@ -9,6 +9,20 @@
   padding: 281px 0;
 }
 
+.link-item {
+  transition: 0.3s ease;
+}
+
+.link-item:hover {
+  transform: scale(1.08);
+  background-color: var(--btn-hover);
+  border-radius: 50%;
+}
+
+.link-item:last-child:hover {
+  border-radius: 60px;
+}
+
 .hero-title {
   width: 100%;
   font-family: Inter Tight;

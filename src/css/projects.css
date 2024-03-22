@@ -181,11 +181,7 @@
     .projects-container
     .projects-container-swiper
     .projects-swiper-slide {
-    min-width: 768px;
-  }
-
-  .project-card {
-    width: 100%;
+    min-width: 704px;
   }
 
   .projects-list {
@@ -216,6 +212,7 @@
   }
 
   .card-img-container {
+    max-width: 704px;
     padding: 120px 45px;
   }
 
