@@ -66,7 +66,7 @@
     text-shadow: none;
   }
   50% {
-    color: var(--btn-pulse);
+    color: var(--btn-color);
     text-shadow: 0 0 10px var(--text-color);
   }
   100% {
