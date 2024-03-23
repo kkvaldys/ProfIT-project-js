@@ -1,3 +1,5 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 // Form check
 
 const emailInput = document.querySelector('input[name="email"]');
@@ -85,7 +87,16 @@ async function postData(event) {
     commentsInput.value = '';
     emailInput.parentElement.classList.remove('succes');
   } else {
-    alert('Invalid data, try again!');
+      iziToast.error({
+      title: 'Error',
+      message: `Invalid data, try again!`,
+      maxWidth: 300,
+      progressBar: true,
+      progressBarEasing: false,
+      position: 'bottomRight',
+      color: '#1c1d20',
+      backgroundColor: '#ed3b44',
+    });
   }
 }
 
