@@ -125,11 +125,11 @@
 }
 
 @keyframes coversLine {
-  50% {
-    transform: translateX(-280%);
+  from {
+    transform: translateX(-20%);
   }
 
-  100% {
-    transform: translateX(0%);
+  to {
+    transform: translateX(-180%);
   }
 }
