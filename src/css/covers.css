@@ -47,9 +47,11 @@
   height: auto;
   clip-path: inset(0);
   animation-name: coversLine;
-  animation-duration: 10s;
+  animation-duration: 15s;
+  animation-direction: alternate;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 .covers-img {
@@ -128,7 +130,6 @@
   0% {
     transform: translateX(-20%);
   }
-
   50% {
     transform: translateX(-180%);
   }
