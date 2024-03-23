@@ -47,7 +47,7 @@
   height: auto;
   clip-path: inset(0);
   animation-name: coversLine;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -125,11 +125,14 @@
 }
 
 @keyframes coversLine {
-  from {
+  0% {
     transform: translateX(-20%);
   }
 
-  to {
+  50% {
     transform: translateX(-180%);
+  }
+  100% {
+    transform: translateX(-20%);
   }
 }
