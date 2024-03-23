@@ -59,8 +59,8 @@ h3.faq-accordion-title.ac-trigger::after {
 }
 
 .faq-accordion-item.is-active {
-  border: 1px solid var(--btn-color);
-  background-color: var(--card-clr);
+  border: 1px solid var(--card-clr);
+  background-color: var(--font-family);
 }
 
 /* media */
